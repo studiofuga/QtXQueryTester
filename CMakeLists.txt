@@ -13,21 +13,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt5 COMPONENTS Widgets Xml XmlPatterns REQUIRED)
 
-if(ANDROID)
-  add_library(QtXQueryTester SHARED
-    main.cpp
-    qtquerytesterwindow.cpp
-    qtquerytesterwindow.h
-    qtquerytesterwindow.ui
-  )
-else()
   add_executable(QtXQueryTester
     main.cpp
     qtquerytesterwindow.cpp
     qtquerytesterwindow.h
     qtquerytesterwindow.ui
   )
-endif()
 
 target_link_libraries(QtXQueryTester
     PRIVATE

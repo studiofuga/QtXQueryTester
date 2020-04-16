@@ -29,9 +29,6 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="0">
-     <widget class="QTextEdit" name="textQuery"/>
-    </item>
     <item row="2" column="0">
      <widget class="QLabel" name="label_2">
       <property name="text">
@@ -39,11 +36,14 @@
       </property>
      </widget>
     </item>
+    <item row="1" column="0">
+     <widget class="QPlainTextEdit" name="textQuery"/>
+    </item>
     <item row="3" column="0">
-     <widget class="QTextEdit" name="textXml"/>
+     <widget class="QPlainTextEdit" name="textXml"/>
     </item>
     <item row="1" column="1" rowspan="3">
-     <widget class="QTextEdit" name="textResult"/>
+     <widget class="QPlainTextEdit" name="textResult"/>
     </item>
    </layout>
   </widget>

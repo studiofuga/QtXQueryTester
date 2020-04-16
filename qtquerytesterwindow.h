@@ -23,6 +23,11 @@ private slots:
 private:
     void process();
 
+protected:
+    void closeEvent(QCloseEvent *event) override;
+
+private:
+
     Ui::QtQueryTesterWindow *ui;
 };
 #endif // QTQUERYTESTERWINDOW_H
